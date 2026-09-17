@@ -3,10 +3,7 @@
 #include <ctype.h>
 
 int isPalindrome(char* str) {
-    int len = strlen(str);
-    int i = 0;
-    int j = len - 1;
-    int pal = 1;
+    int len = strlen(str), i = 0, j = len - 1, pal = 1;
 
     while (j >= i) {
         while (ispunct(str[i]) || str[i] == ' ') { i++; }
@@ -29,12 +26,8 @@ int main() {
     int pal = isPalindrome(str);
 
     switch (pal) {
-        case 0:
-            printf("Your string is not a palindrome.");
-            break;
-        case 1:
-            printf("Your string is a palindrome.");
-            break;
+        case 0: printf("Your string is not a palindrome."); break;
+        case 1: printf("Your string is a palindrome."); break;
     }
 
     return 0;
