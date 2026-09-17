@@ -1,0 +1,16 @@
+[
+  {
+    "label": "Build & Run C file",
+    "command": "gcc -std=c11 -g -Wall -Wextra -o /tmp/$ZED_STEM $ZED_FILE && /tmp/$ZED_STEM",
+    "use_new_terminal": true,
+    "allow_concurrent_runs": false,
+    "reveal": "always"
+  },
+  {
+    "label": "Build C file (debug)",
+    "command": "gcc -std=c11 -g -Wall -Wextra -o /tmp/$ZED_STEM $ZED_FILE",
+    "use_new_terminal": false,
+    "allow_concurrent_runs": false,
+    "reveal": "always"
+  }
+]
